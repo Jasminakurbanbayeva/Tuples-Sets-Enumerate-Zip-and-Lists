@@ -6,4 +6,8 @@ def replace_with_index(items: list) -> list:
     Returns:
         list: List with items replaced by their indices
     """
-    return
+    result=[]
+    for i,x in enumerate(items):
+        result.append(i)
+    return result
+print(replace_with_index(["a", "b", "c"]))
