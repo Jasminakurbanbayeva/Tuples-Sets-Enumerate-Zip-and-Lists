@@ -8,4 +8,9 @@ def find_passing_students(names: list, scores: list, passing_score: int = 60) ->
     Returns:
         list: List of names of students who passed
     """
-    return
+    result=[]
+    for i,x in zip(names,scores):
+        if x >=passing_score:
+            result.append(i)
+    return result
+print(find_passing_students(names = ["Ali", "Sara"], scores = [45, 85]))
