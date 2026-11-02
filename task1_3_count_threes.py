@@ -6,4 +6,6 @@ def count_threes(numbers: tuple) -> int:
     Returns:
         int: The count of number 3 in the tuple
     """
-    return
+    a=numbers.count(3)
+    return a
+print(count_threes((1, 3, 3, 7, 3)))
