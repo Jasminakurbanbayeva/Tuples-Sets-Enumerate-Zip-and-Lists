@@ -7,4 +7,8 @@ def create_dict_from_lists(keys: list, values: list) -> dict:
     Returns:
         dict: Dictionary created from the two lists
     """
-    return
+    result=[]
+    for i,x in zip(keys,values):
+        result[i]=x
+    return result 
+print(create_dict_from_lists(["name", "age"], ["Alice", 30]))
