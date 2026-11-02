@@ -6,4 +6,6 @@ def remove_first(lst: list) -> list:
     Returns:
         list: List with the first element removed
     """
-    return
+    lst.pop(0)
+    return lst
+print(remove_first(["a", "b", "c"]))
