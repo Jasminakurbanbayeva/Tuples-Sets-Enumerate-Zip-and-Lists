@@ -6,4 +6,11 @@ def replace_even_numbers(numbers: list) -> list:
     Returns:
         list: List with even numbers replaced by 0
     """
-    return
+    result=[]
+    for i in numbers:
+        if i % 2==0:
+            result.append(0)
+        else:
+            result.append(i)
+    return result
+print(replace_even_numbers([1, 2, 3, 4]))    
