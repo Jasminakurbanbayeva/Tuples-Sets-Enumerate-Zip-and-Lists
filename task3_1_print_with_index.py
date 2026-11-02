@@ -6,4 +6,6 @@ def print_with_index(items: list) -> None:
     Returns:
         None: Prints each item with its index
     """
-    return
+    for i in enumerate(items):
+        print(i) 
+print(print_with_index(["apple", "banana", "cherry"]))
