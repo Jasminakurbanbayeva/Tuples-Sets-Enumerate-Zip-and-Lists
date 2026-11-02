@@ -7,4 +7,10 @@ def find_difference(set1: set, set2: set) -> set:
     Returns:
         set: Elements in set1 that are not in set2
     """
-    return
+    result=set()
+    for i in set1:
+        if i not in set2:
+            result.add(i)
+    return result
+print(find_difference({1, 2, 3}, {2, 3, 4}))
+
